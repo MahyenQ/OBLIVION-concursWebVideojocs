@@ -1,0 +1,128 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body { /*Estilo general del sitio*/
+    margin: 0; /*Elimina los márgenes por defecto del navegador.*/
+    background-color: #000; /*Fondo negro*/
+    color: #fff; /*Texto blanco por defecto en toda la página*/
+  }
+
+  .navbar { /*Barra de navegación*/
+    background-color: #111; /*casi color negro para el fondo del menú*/
+    font-size: 12px; /*tamaño de letra más pequeño, tipo retro*/
+    z-index: 1000; /* esto basicamente asegura que el menú se mantenga encima de otros elementos cuando se hace scroll*/
+  }
+
+  .navbar-brand span {
+    color: #00faff; /**/
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #0ff;
+  }
+
+  .form-control {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+  }
+
+  .icon-btn {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+/* CSS de la Portada */
+
+#Portada {
+    background-image: url(../img/imagendefonfo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#Portada::before { /* ::before: Se utiliza para crear un elemento adicional que se posiciona sobre el contenido del elemento #Portada. */
+    content: '';
+    position: absolute; /* position: absolute;: Permite que el pseudo-elemento se posicione sobre el elemento padre #Portada. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(128, 12, 128, 0.7), rgba(128, 0, 128, 0)); /* linear-gradient(to right, ...): Cambia la dirección del gradiente para que vaya de izquierda a derecha. Comienza con un morado fuerte en la izquierda y se desvanece a transparente hacia la derecha. */
+    pointer-events: none; /*pointer-events: none;: Asegura que el pseudo-elemento no interfiera con las interacciones del usuario, como clics o desplazamientos.*/
+}
+#Portada h1 {
+    margin-right: 35%;
+    margin-left: 10%;
+    color: white;
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1; /* Asegura que el h1 esté por encima de la sombra del fondo */
+    font-size: 70px;
+}
+#Portada h1 sec {
+    color: red;
+}
+
+#Portada p {
+    font-family:Verdana;
+    font-size: 30px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 25%;
+    position: relative;
+    z-index: 1;
+}
+.Margen-boton {
+    margin-left: 10%;
+}   
+#Portada button {
+    color: white;
+    font-family:Verdana;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent; /* Pone el fondo del boton transparente */
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Añade un dilei de 0,3 segundos al cambio de color */
+    padding: 5px 10px; /* Añade espacio entre el borde y el texto del boton */
+}
+#Portada button:hover, /* Hace que cuando pasas el cursor por encima o clicas al boton el fondo pase a un "rojo rosado" */
+#Portada button:focus {
+    background-color: #FF2E63;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media query del menu para modo movi*/
+
+@media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .navbar-collapse {
+      background-color: #111;
+    }
+  }
