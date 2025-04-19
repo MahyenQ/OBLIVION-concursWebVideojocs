@@ -5,29 +5,31 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+/* menu */
+
 body { /*Estilo general del sitio*/
     margin: 0; /*Elimina los márgenes por defecto del navegador.*/
-    background-color: #000; /*Fondo negro*/
+    background-color: #000; /*Fondo negro del menu*/
     color: #fff; /*Texto blanco por defecto en toda la página*/
   }
 
   .navbar { /*Barra de navegación*/
     background-color: #111; /*casi color negro para el fondo del menú*/
-    font-size: 12px; /*tamaño de letra más pequeño, tipo retro*/
+    font-size: 10px; /*tamaño de letra más pequeño, tipo retro*/
     z-index: 1000; /* esto basicamente asegura que el menú se mantenga encima de otros elementos cuando se hace scroll*/
   }
 
   .navbar-brand span {
-    color: #00faff; /**/
+    color: orangered; /*Aplica color celeste a "OBLIVION", que está dentro de span*/
   }
 
   .navbar-nav .nav-link {
-    color: #fff;
-    margin-right: 15px;
+    color: #fff; /*enlaces blancos*/
+    margin-right: 15px; /*espaciado entre enlaces*/
   }
 
   .navbar-nav .nav-link:hover {
-    color: #0ff;
+    color: #0ff; /* esto es basicamente para que cuando pasamos el raton por encima, el color cambia a celeste */
   }
 
   .form-control {
@@ -35,94 +37,356 @@ body { /*Estilo general del sitio*/
     font-size: 10px;
   }
 
-  .icon-btn {
-    color: white;
-    margin-left: 10px;
+  .icon-btn { /* lo iconos de Bootstrap */
+    color: white; 
+    margin-left: 10px; /* espacio entre los dos iconos */
     font-size: 18px;
   }
 
-/* CSS de la Portada */
+/* la Portada */
 
-#Portada {
-    background-image: url(../img/imagendefonfo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  #Portada {
+      background-image: url(../img/imagendefonfo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+  }
+
+  #Portada::before { /* ::before: Se utiliza para crear un elemento adicional que se posiciona sobre el contenido del elemento #Portada. */
+      content: '';
+      position: absolute; /* position: absolute;: Permite que el pseudo-elemento se posicione sobre el elemento padre #Portada. */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(128, 12, 128, 0.7), rgba(128, 0, 128, 0)); /* linear-gradient(to right, ...): Cambia la dirección del gradiente para que vaya de izquierda a derecha. Comienza con un morado fuerte en la izquierda y se desvanece a transparente hacia la derecha. */
+      pointer-events: none; /*pointer-events: none;: Asegura que el pseudo-elemento no interfiera con las interacciones del usuario, como clics o desplazamientos.*/
+  }
+  #Portada h1 {
+      margin-right: 35%;
+      margin-left: 10%;
+      color: white;
+      position: relative; /* Necesario para que z-index funcione */
+      z-index: 1; /* Asegura que el h1 esté por encima de la sombra del fondo */
+      font-size: 70px;
+  }
+  #Portada h1 sec {
+      color: red;
+  }
+
+  #Portada p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      color: white;
+      margin-left: 10%;
+      margin-right: 25%;
+      position: relative;
+      z-index: 1;
+  }
+  .Margen-boton {
+      margin-left: 10%;
+  }   
+  #Portada button {
+      color: white;
+      font-family:Verdana;
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      background-color: transparent; /* Pone el fondo del boton transparente */
+      border: 3px solid white;
+      border-radius: 10px;
+      transition: background-color 0.3s, color 0.3s; /* Añade un dilei de 0,3 segundos al cambio de color */
+      padding: 5px 10px; /* Añade espacio entre el borde y el texto del boton */
+  }
+  #Portada button:hover, /* Hace que cuando pasas el cursor por encima o clicas al boton el fondo pase a un "rojo rosado" */
+  #Portada button:focus {
+      background-color: #FF2E63;
+  }
+
+  /* para la pagina de Enden Ring */
+
+  .container {
+    display: flex;
+    padding: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 80px; /* Añadir margen superior para evitar que el contenido quede debajo del menú */
+  }
+
+  /* COLUMNA IZQUIERDA */
+  .left {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .left img {
     width: 100%;
-    height: 100vh;
-    position: relative;
-}
+    border-radius: 8px;
+  }
 
-#Portada::before { /* ::before: Se utiliza para crear un elemento adicional que se posiciona sobre el contenido del elemento #Portada. */
-    content: '';
-    position: absolute; /* position: absolute;: Permite que el pseudo-elemento se posicione sobre el elemento padre #Portada. */
+  .price-box {
+    background-color: #266cc9;
+    margin-top: 20px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+
+  .price-box span {
+    color: orange;
+  }
+
+  .btn { 
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .btn-purple { /* Botón morado */
+    background-color: #a78bfa; 
+    color: white;
+  }
+
+  .btn-dark { /* Botón oscuro */
+    background-color: #3b3b4f;
+    color: white;
+  }
+
+  /* COLUMNA DERECHA */
+  .right {
+    flex: 2;
+    min-width: 300px;
+  }
+
+  .right h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .right p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white; /* Cambia el color del texto a blanco */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .four {
+    color: black; /* para cambiar el color de los encabezados de las casillas*/
+  }
+
+  /* VIDEO */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .video-container iframe {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(128, 12, 128, 0.7), rgba(128, 0, 128, 0)); /* linear-gradient(to right, ...): Cambia la dirección del gradiente para que vaya de izquierda a derecha. Comienza con un morado fuerte en la izquierda y se desvanece a transparente hacia la derecha. */
-    pointer-events: none; /*pointer-events: none;: Asegura que el pseudo-elemento no interfiera con las interacciones del usuario, como clics o desplazamientos.*/
-}
-#Portada h1 {
-    margin-right: 35%;
-    margin-left: 10%;
-    color: white;
-    position: relative; /* Necesario para que z-index funcione */
-    z-index: 1; /* Asegura que el h1 esté por encima de la sombra del fondo */
-    font-size: 70px;
-}
-#Portada h1 sec {
-    color: red;
-}
+    border: none;
+  }
 
-#Portada p {
-    font-family:Verdana;
-    font-size: 30px;
-    color: white;
-    margin-left: 10%;
-    margin-right: 25%;
-    position: relative;
-    z-index: 1;
-}
-.Margen-boton {
-    margin-left: 10%;
-}   
-#Portada button {
-    color: white;
-    font-family:Verdana;
+  /* PERSONAJES PRINCIPALES */
+  .characters-title {
+    margin-top: 40px;
     font-size: 20px;
-    position: relative;
-    z-index: 1;
-    background-color: transparent; /* Pone el fondo del boton transparente */
-    border: 3px solid white;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s; /* Añade un dilei de 0,3 segundos al cambio de color */
-    padding: 5px 10px; /* Añade espacio entre el borde y el texto del boton */
+    font-weight: bold;
+    color: #fbbf24;
+  }
+
+  h1 { /* Titulo de la pagina */
+      color: #fbbf24;
+  }
+
+  .characters { /* contenedor de los personajes */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .character-card {
+    background-color: #2c273d;
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  .character-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .character-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .character-card {
+      background-color: #808474;
+      padding: 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px 2px white; /* Añadir brillo constante */
+  }
+
+  .character-card:hover {
+    background-color: rgb(168, 168, 113); /* Cambia el fondo a amarillo */
+    color: black; /* Cambia el texto a negro */
+    box-shadow: 0 0 15px 3px rgb(168, 168, 113); /* Añade un brillo amarillo al pasar el mouse */
+  }
+
+  .btn-purple:hover {
+      background-color: #8b5cf6;
+  }
+
+  .btn-dark:hover {
+      background-color: #4b5563;
+  }
+
+  .footer {
+  background-color: #1f1e20;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 20px; /* Añadir margen superior para separar del contenido */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  } 
+
+  .footer-container { /* contenedor del footer */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+  .footer-column { /* columnas del footer */
+  flex: 1 1 220px;
 }
-#Portada button:hover, /* Hace que cuando pasas el cursor por encima o clicas al boton el fondo pase a un "rojo rosado" */
-#Portada button:focus {
-    background-color: #FF2E63;
-}
 
+  .footer-column h2.logo { /* logo del footer */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
 
+  .oblivion { /* color del logo */
+  color: #00faff;
+  font-size: 25px;
+  }
 
+  .footer-column h3 { /* títulos de las columnas */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  margin-bottom: 15px;
+  }
 
+  .footer-column ul { /* listas de enlaces */
+  list-style: none;
+  padding: 0;
+  }
 
+  .footer-column ul li { /* elementos de la lista */
+  margin-bottom: 10px;
+  }
 
+  .footer-column ul li a { /* enlaces de la lista */
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
+  .footer-column ul li a:hover { /* enlaces de la lista al pasar el ratón */
+  color: #00F0FF;
+  }
 
+  .footer-column p { /* párrafos de contacto */
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
+  hr { /* línea horizontal */
+  border: none;
+  height: 1px;
+  margin: 30px 0 15px;
+  }
 
+  .footer-bottom { /* parte inferior del footer */
+  text-align: center;
+  font-size: 14px;
+  }
 
+  .letra {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
-
-/*Media query del menu para modo movi*/
+  .text { /* descripcion */
+    margin-top: 15px;
+    border: 2px solid yellow; /* Bordes amarillos */
+    padding: 10px; /* Espaciado interno */
+    display: inline-block; /* Ajusta el tamaño del cuadro al contenido */
+    color: white; /* Color del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    background-color: transparent; /* Fondo transparente */
+    box-shadow: 0 0 10px yellow; /* Brillo amarillo alrededor del cuadro */
+  }
 
 @media (max-width: 768px) {
+
+  /* menu */
     .navbar-nav {
-      text-align: center;
+      text-align: center; /* centra los enlaces del menú*/
     }
 
     .navbar-collapse {
-      background-color: #111;
+      background-color: #111; /*Mantiene el fondo del menú desplegable en color oscuro cuando se colapsa*/
     }
+
+  /*elden ring*/
+
+  .container {
+    flex-direction: column;
+    padding: 15px;
   }
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+
+  .characters {
+    grid-template-columns: 1fr;
+  }
+
+  .right h1 {
+    font-size: 26px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
