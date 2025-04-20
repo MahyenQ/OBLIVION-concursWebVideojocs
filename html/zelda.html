@@ -4,8 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Legend of Zelda: Tears of the Kingdom</title>
+    <link rel="icon" type="img/png" href="../img/iconozelda.png">
+    <!-- Bootstrap --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Google Fonts--> <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Enlace de CSS --> <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Menú fijo que esta arriba del todo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><span>OBLIVION</span></a>
+
+        <!-- Botón movil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/zelda.html">The Legend of Zelda: Tears of the Kingdom</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/baldur.html">Baldur's Gate 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/cyberpunk.html">Cyberpunk 2077</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/eldenring.html">Elden Ring</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/reddead.html">Red Dead Redemption 2</a></li>
+            </ul>
+  
+            <!-- Barra de búsqueda -->
+            <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar juegos..." aria-label="Buscar">
+            </form>
+  
+            <!-- Iconos -->
+            <div class="d-flex">
+                <a href="#" class="icon-btn"><i class="bi bi-person-circle"></i></a>
+                <a href="#" class="icon-btn position-relative">
+                    <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Elden Ring -->
+  <div class="container">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="left">
+
+      <!-- Imagen -->
+      <img src="../img/zelda.png" alt="Zelda"/>
+
+      <!-- Precio -->
+      <div class="price-box">
+        <div>Precio</div>
+        <span>59,99 €</span>
+      </div>
+
+      <!-- Botones -->
+      <button class="btn btn-purple">Compra ahora</button>
+      <button class="btn btn-dark">Añadir al carrito</button>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="right">
+
+      <!-- Título -->
+      <h1><B>The Legend of Zelda: Tears of the Kingdom</B></h1>
+
+      <!-- Descripción -->
+      <p class="text">
+        The Legend of Zelda: Tears of the Kingdom es la secuela de Breath of 
+        the Wild, llevando a los jugadores de nuevo al vasto mundo de Hyrule, 
+        ahora con islas flotantes en los cielos. Link tiene nuevos poderes que 
+        le permiten construir vehículos y armas únicas, enganchar objetos y atravesar 
+        el mundo de formas nuevas. El juego continúa la historia tras los eventos de 
+        Breath of the Wild, con Zelda y Link enfrentándose a una nueva amenaza que surge
+        de las profundidades de Hyrule.
+      </p>
+
+      <!-- Trailer -->
+      <h3 class="characters-title">Trailer oficial</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/uHGShqcAHlQ" allowfullscreen></iframe>
+      </div>
+
+      <!-- Casillas de los personajes -->
+       
+      <h3 class="characters-title">Personatges principals</h3>
+      <div class="characters">
+        <div class="character-card">
+          <h3 class="four">Link</h3>
+          <p>El protagonista silencioso y héroe de Hyrule, que empuña la espada maestra y nuevos poderes para salvar el reino.</p>
+        </div>
+        <div class="character-card">
+          <h3 class="four">Zelda</h3>
+          <p>La princesa de Hyrule, que posee el poder de la Triforça de la Sabiduría y juega un rol clave en la historia.</p>
+        </div>
+        <div class="character-card">
+          <h3 class="four">Ganondorf</h3>
+          <p>El antiguo rey de los Gerudo y principal antagonista, que busca la Triforça para dominar a Hyrule.</p>
+        </div>
+        <div class="character-card">
+          <h3 class="four">Sidon</h3>
+          <p>El príncipe de los Zora, carismático y leal, que ayuda a Link en su misión.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Columna 1 -->
+      <div class="footer-column">
+        <h2 class="logo"><span class="oblivion">OBLIVION</span></h2>
+        <p>Tu destino para los mejores videojuegos al mejor precio. Nuevos lanzamientos, clásicos y accesorios.</p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="footer-column">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../html/zelda.html">The Legend of Zelda</a></li>
+          <li><a href="../html/baldur.html">Baldur's Gate 3</a></li>
+          <li><a href="../html/cyberpunk.html">Cyberpunk 2077</a></li>
+          <li><a href="../html/eldenring.html">Elden Ring</a></li>
+          <li><a href="../html/reddead.html">Red Dead Redemption 2</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="footer-column">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Acción</a></li>
+          <li><a href="#">Aventura</a></li>
+          <li><a href="#">Deportes</a></li>
+          <li><a href="#">RPG</a></li>
+          <li><a href="#">Estrategia</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4 -->
+      <div class="footer-column">
+        <h3> Contacto </h3>
+        <p> Av. Videojuegos 123, Ciudad Gamer</p>
+        <p> +34 123 456 789</p>
+        <p> info@oblivion.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p class="letra">© 2025 OBLIVION. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Icons --> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>

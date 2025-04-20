@@ -20,7 +20,7 @@ body { /*Estilo general del sitio*/
   }
 
   .navbar-brand span {
-    color: orangered; /*Aplica color celeste a "OBLIVION", que está dentro de span*/
+    color: aquamarine; /*Aplica color celeste a "OBLIVION", que está dentro de span*/
   }
 
   .navbar-nav .nav-link {
@@ -76,7 +76,7 @@ body { /*Estilo general del sitio*/
       color: red;
   }
 
-  #Portada p {
+  #Portada p { /* Descripción de la portada */
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px;
       color: white;
@@ -84,11 +84,19 @@ body { /*Estilo general del sitio*/
       margin-right: 25%;
       position: relative;
       z-index: 1;
+      display: inline-block; /* Ajusta el tamaño del cuadro al contenido */
+      border: 2px solid white; /* Bordes blancos */
+      padding: 20px; /* Espaciado interno */
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+      border-radius: 8px;
+      box-shadow: 0 0 10px white; /* Brillo alrededor del cuadro */
   }
-  .Margen-boton {
+
+  .Margen-boton { /* Espacio entre el texto y el botón */
       margin-left: 10%;
-  }   
-  #Portada button {
+  }
+
+  #Portada button { /* Botón de la portada */
       color: white;
       font-family:Verdana;
       font-size: 20px;
@@ -121,12 +129,12 @@ body { /*Estilo general del sitio*/
     max-width: 400px;
   }
 
-  .left img {
+  .left img { /* Imagen del juego */
     width: 100%;
     border-radius: 8px;
   }
 
-  .price-box {
+  .price-box { /* Caja de precio */
     background-color: #266cc9;
     margin-top: 20px;
     padding: 10px 15px;
@@ -137,8 +145,13 @@ body { /*Estilo general del sitio*/
     font-weight: bold;
   }
 
-  .price-box span {
+  .price-box span { /* Precio */
     color: orange;
+  }
+
+  .price-box:hover {
+    box-shadow: 0 0 15px 3px #659de7; /* Brillo naranja al pasar el mouse */
+    background-color: #96bbf0; /* Cambia a un tono más oscuro de naranja */
   }
 
   .btn { 
@@ -154,12 +167,24 @@ body { /*Estilo general del sitio*/
 
   .btn-purple { /* Botón morado */
     background-color: #a78bfa; 
-    color: white;
+    color: black;
+  }
+
+  .btn-purple:hover {
+    box-shadow: 0 0 15px 3px #8c45ac; /* Brillo naranja al pasar el mouse */
+    background-color: #cf99d9; /* Cambia a un tono más oscuro de naranja */
   }
 
   .btn-dark { /* Botón oscuro */
     background-color: #3b3b4f;
-    color: white;
+    color: black;
+    background-color: #918d87;
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+
+  .btn-dark:hover {
+    box-shadow: 0 0 15px 3px #ffa600; /* Brillo naranja al pasar el mouse */
+    background-color: #ff8c00; /* Cambia a un tono más oscuro de naranja */
   }
 
   /* COLUMNA DERECHA */
@@ -293,7 +318,7 @@ body { /*Estilo general del sitio*/
   }
 
   .oblivion { /* color del logo */
-  color: #00faff;
+  color: #ffa600;
   font-size: 25px;
   }
 
@@ -301,6 +326,7 @@ body { /*Estilo general del sitio*/
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
   margin-bottom: 15px;
+  color: #ffa600;
   }
 
   .footer-column ul { /* listas de enlaces */
