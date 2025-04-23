@@ -9,7 +9,7 @@
 
 body { /*Estilo general del sitio*/
     margin: 0; /*Elimina los márgenes por defecto del navegador.*/
-    background-color: #000; /*Fondo negro del menu*/
+    background-color: rgb(28, 2, 39); /*Fondo negro del menu*/
     color: #fff; /*Texto blanco por defecto en toda la página*/
   }
 
@@ -96,6 +96,12 @@ body { /*Estilo general del sitio*/
       margin-left: 10%;
   }
 
+  .ge {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+
   #Portada button { /* Botón de la portada */
       color: white;
       font-family:Verdana;
@@ -113,7 +119,7 @@ body { /*Estilo general del sitio*/
       background-color: #FF2E63;
   }
 
-  /* para la pagina de Enden Ring */
+  /* para las paginas */
 
   .container {
     display: flex;
@@ -150,8 +156,8 @@ body { /*Estilo general del sitio*/
   }
 
   .price-box:hover {
-    box-shadow: 0 0 15px 3px #659de7; /* Brillo naranja al pasar el mouse */
-    background-color: #96bbf0; /* Cambia a un tono más oscuro de naranja */
+    box-shadow: 0 0 15px 3px #659de7;
+    background-color: #96bbf0;
   }
 
   .btn { 
@@ -171,8 +177,8 @@ body { /*Estilo general del sitio*/
   }
 
   .btn-purple:hover {
-    box-shadow: 0 0 15px 3px #8c45ac; /* Brillo naranja al pasar el mouse */
-    background-color: #cf99d9; /* Cambia a un tono más oscuro de naranja */
+    box-shadow: 0 0 15px 3px #8c45ac;
+    background-color: #cf99d9;
   }
 
   .btn-dark { /* Botón oscuro */
@@ -381,6 +387,143 @@ body { /*Estilo general del sitio*/
     box-shadow: 0 0 10px yellow; /* Brillo amarillo alrededor del cuadro */
   }
 
+  /* pagina de catalogo*/
+
+  .containerr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    width: 100%;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 60px; /* Espacio entre el menú y el título */
+    margin-bottom: 5px; /* Reduce el espacio debajo del título */
+  }
+
+  .sidebar { /* barra lateral */
+    flex: 1; 
+    min-width: 250px; 
+    background-color: #1c1c1c;
+    padding: 30px;
+  }
+
+  .sidebar h3 {  /* Titulo de la barra lateral Categoria y Plataformas */
+    font-size: 18px;
+    color: orange;
+  }
+
+  .sidebar h2 { /* Titulo de la barra lateral Filtors */
+    font-size: 14px;
+    color: rgb(111, 148, 199);
+  }
+
+  .filters { /* Filtros */
+    margin-top: 20px;
+  }
+
+  .filters label { /* Etiquetas de los filtros */
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .main { /* contenedor principal */
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .game-card { 
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .game-info { 
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .game-info .title { /* Titulo de los juegos */
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .tags { /* Etiquetas de los juegos */
+    color: #00f7ff;
+    margin: 5px 0;
+  }
+
+  .price { /* Precio de los juegos */
+    color: #e74c3c;
+    font-size: 12px;
+  }
+
+  .old-price { /* Precio antiguo */
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 5px;
+  }
+
+  .rating { /* Calificación de los juegos */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+
+  .discount { /* Descuento de los juegos */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  .nuevo { 
+    background: cyan;
+    color: black;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  select {
+    background-color: #dd1414;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace;
+    padding: 5px;
+    font-size: 10px;
+    border: none;
+    margin: 10px 0;
+  }
+
 @media (max-width: 768px) {
 
   /* menu */
@@ -392,7 +535,7 @@ body { /*Estilo general del sitio*/
       background-color: #111; /*Mantiene el fondo del menú desplegable en color oscuro cuando se colapsa*/
     }
 
-  /*elden ring*/
+  /*las paginas de juegos*/
 
   .container {
     flex-direction: column;
@@ -415,4 +558,20 @@ body { /*Estilo general del sitio*/
   .btn {
     font-size: 15px;
   }
+
+/*catalogo*/
+
+.game-card {
+  width: 100%;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.top-bar {
+  justify-content: center;
+}
+
+
 }

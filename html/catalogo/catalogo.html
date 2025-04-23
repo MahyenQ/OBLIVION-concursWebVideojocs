@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Juegos</title>
+    <link rel="icon" type="img/png" href="../../img/iconocatalogo.png">
+    <!-- Bootstrap --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Google Fonts--> <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Enlace de CSS --> <link href="../../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menú fijo que esta arriba del todo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html"><span>OBLIVION</span></a>
+
+        <!-- Botón movil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                <li class="nav-item"><a class="nav-link">Destacados:</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../html/zelda.html">The Legend of Zelda: Tears of the Kingdom</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../html/baldur.html">Baldur's Gate 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../html/cyberpunk.html">Cyberpunk 2077</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../html/eldenring.html">Elden Ring</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../html/reddead.html">Red Dead Redemption 2</a></li>
+            </ul>
+  
+            <!-- Barra de búsqueda -->
+            <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar juegos..." aria-label="Buscar">
+            </form>
+  
+            <!-- Iconos -->
+            <div class="d-flex">
+                <a href="#" class="icon-btn"><i class="bi bi-person-circle"></i></a>
+                <a href="#" class="icon-btn position-relative">
+                    <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>Catálogo de Juegos</header> <!-- Encabezado de la página -->
+  <div class="containerr">
+    <aside class="sidebar">
+      <h2>Filtros</h2> <!-- Título de la barra lateral -->
+      <div class="filters">
+        <h3>Categorías</h3>
+        <label><input type="checkbox"> Acción</label>
+        <label><input type="checkbox"> RPG</label>
+        <label><input type="checkbox"> Mundo Abierto</label>
+        <label><input type="checkbox"> Aventura</label>
+        <label><input type="checkbox"> Fantasía</label>
+        <label><input type="checkbox"> Carreras</label>
+        <label><input type="checkbox"> Deportes</label>
+        <label><input type="checkbox"> Simulación</label>
+        <label><input type="checkbox"> Estrategia</label>
+        <label><input type="checkbox"> Ciencia Ficción</label>
+        <label><input type="checkbox"> 4X</label>
+        <label><input type="checkbox"> Roguelike</label>
+        <label><input type="checkbox"> Indie</label>
+        <label><input type="checkbox"> Supervivencia</label>
+        <label><input type="checkbox"> Tower Defense</label>
+        <label><input type="checkbox"> Medieval</label>
+
+        <h3 style="margin-top: 20px;">Plataformas</h3>
+        <label><input type="checkbox"> PC</label>
+        <label><input type="checkbox"> PS5</label>
+        <label><input type="checkbox"> Xbox Series X</label>
+      </div>
+    </aside>
+
+    <main class="main"> <!-- Contenedor principal -->
+      <div class="game-card">
+        <div class="discount">-15%</div>
+        <div class="rating">⭐ 4.8</div> <!-- Calificación del juego -->
+        <img src="../../img/cyber.png">
+        <div class="game-info">
+          <div class="title">Cyber Night 2077</div>
+          <div class="tags">Acción RPG</div>
+          <div><span class="price">59.49€</span><span class="old-price">69.99€</span></div>
+          <div>PC / PS5</div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="rating">⭐ 4.6</div>
+        <img src="../../img/Legendofantasy.png">
+        <div class="game-info">
+          <div class="title">Legend of Fantasy XV</div>
+          <div class="tags">RPG Aventura</div>
+          <div class="price">59.99€</div>
+          <div>PS5 / Xbox Series X</div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="discount">-10%</div>
+        <div class="rating">⭐ 4.5</div>
+        <img src="../../img/speedracing.png" alt="">
+        <div class="game-info">
+          <div class="title">Speed Racing Ultimate</div>
+          <div class="tags">Carreras Deportes</div>
+          <div><span class="price">44.99€</span><span class="old-price">49.99€</span></div>
+          <div>PC / PS5</div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="rating">⭐ 4.3</div>
+        <img src="../../img/footballmasters.png" alt="">
+        <div class="game-info">
+          <div class="title">Football Masters 2025</div>
+          <div class="tags">Deportes Simulación</div>
+          <div class="price">54.99€</div>
+          <div>PC / PS5</div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="nuevo">NUEVO</div>
+        <div class="rating">⭐ 4.7</div>
+        <img src="../../img/stellarconquest.png" alt="">
+        <div class="game-info">
+          <div class="title">Stellar Conquest</div>
+          <div class="tags">Estrategia Ciencia Ficción</div>
+          <div class="price">39.99€</div>
+          <div>PC</div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="discount">-25%</div>
+        <div class="rating">⭐ 4.4</div>
+        <img src="../../img/mysticdungeons.png" alt="">
+        <div class="game-info">
+          <div class="title">Mystic Dungeons</div>
+          <div class="tags">Roguelike Indie</div>
+          <div><span class="price">22.49€</span><span class="old-price">29.99€</span></div>
+          <div>PC / PS5</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer" style="background-color: rgb(103, 9, 150);">
+    <div class="footer-container">
+      <!-- Columna 1 -->
+      <div class="footer-column">
+        <h2 class="logo"><span class="oblivion">OBLIVION</span></h2>
+        <p>Tu destino para los mejores videojuegos al mejor precio. Nuevos lanzamientos, 
+          clásicos y accesorios. Nuestro objetivo es ofrecer una experiencia inmersiva y 
+          emocionante a través de los mejores títulos del mercado. Explora nuestra selección 
+          curada y descubre nuevos mundos.</p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="footer-column">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../html/zelda.html">The Legend of Zelda</a></li>
+          <li><a href="../html/baldur.html">Baldur's Gate 3</a></li>
+          <li><a href="../html/cyberpunk.html">Cyberpunk 2077</a></li>
+          <li><a href="../html/eldenring.html">Elden Ring</a></li>
+          <li><a href="../html/reddead.html">Red Dead Redemption 2</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="footer-column">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Acción</a></li>
+          <li><a href="#">Aventura</a></li>
+          <li><a href="#">Deportes</a></li>
+          <li><a href="#">RPG</a></li>
+          <li><a href="#">Estrategia</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4 -->
+      <div class="footer-column">
+        <h3> Contacto </h3>
+        <p> Av. Videojuegos 123, Ciudad Gamer</p>
+        <p> +34 123 456 789</p>
+        <p> info@oblivion.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p class="letra">© 2025 OBLIVION. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+<!-- Bootstrap Icons --> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
