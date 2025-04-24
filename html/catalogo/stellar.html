@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Juegos</title>
-    <link rel="icon" type="img/png" href="../../img/iconocatalogo.png">
+    <link rel="icon" type="img/png" href="../../img/iconostellarconquest.png">
     <!-- Bootstrap --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts--> <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Enlace de CSS --> <link href="../../css/style.css" rel="stylesheet">
@@ -48,108 +48,56 @@
     </div>
   </nav>
 
-  <header>Catálogo de Juegos</header> <!-- Encabezado de la página -->
-  <div class="containerr">
-    <aside class="sidebar">
-      <h2>Filtros</h2> <!-- Título de la barra lateral -->
-      <div class="filters">
-        <h3>Categorías</h3>
-        <label><input type="checkbox"> Acción</label>
-        <label><input type="checkbox"> RPG</label>
-        <label><input type="checkbox"> Mundo Abierto</label>
-        <label><input type="checkbox"> Aventura</label>
-        <label><input type="checkbox"> Fantasía</label>
-        <label><input type="checkbox"> Carreras</label>
-        <label><input type="checkbox"> Deportes</label>
-        <label><input type="checkbox"> Simulación</label>
-        <label><input type="checkbox"> Estrategia</label>
-        <label><input type="checkbox"> Ciencia Ficción</label>
-        <label><input type="checkbox"> 4X</label>
-        <label><input type="checkbox"> Roguelike</label>
-        <label><input type="checkbox"> Indie</label>
-        <label><input type="checkbox"> Supervivencia</label>
-        <label><input type="checkbox"> Tower Defense</label>
-        <label><input type="checkbox"> Medieval</label>
+  <div class="first">
+    <a href="../../html/catalogo/catalogo.html" class="backlink">← Volver al catálogo</a>
 
-        <h3 style="margin-top: 20px;">Plataformas</h3>
-        <label><input type="checkbox"> PC</label>
-        <label><input type="checkbox"> PS5</label>
-        <label><input type="checkbox"> Xbox Series X</label>
+    <div class="another">
+      <div class="gameimage">
+        <img src="../../img/stellarconquest.png" alt="Controlador de videojuego">
+        <div class="discountt">-13% DESCUENTO</div>
       </div>
-    </aside>
 
-    <main class="main"> <!-- Contenedor principal -->
-      <div class="game-card">
-        <div class="discount">-15%</div>
-        <div class="rating">⭐ 4.8</div> <!-- Calificación del juego -->
+      <div class="gameinfo">
+        <div>
+          <div class="titlerating">
+            <div class="title">Stellar Conquest</div>
+          </div>
 
-        <a href="../catalogo/cyber.html"><img src="../../img/cyber.png"></a>
-        <div class="game-info">
-          <div class="title">Cyber Night 2077</div>
-          <div class="tags">Acción RPG</div>
-          <div><span class="price">59.49€</span><span class="old-price">69.99€</span></div>
-          <div>PC / PS5</div>
+          <div class="tags">Estrategia / Ciencia Ficción / 4X</div>
+
+          <p class="description">
+            Construye tu imperio intergaláctico en este juego de 
+            estrategia 4X donde la diplomacia es tan importante como la 
+            guerra. Explora, expande, explota y extermina en un universo 
+            generado proceduralmente.
+          </p>
+
+          <div class="infoo">
+            <div class="box">
+              <span>📅 Fecha de lanzamiento</span>
+              10/9/2024
+            </div>
+            <div class="box">
+              <span>💻 Plataformas</span>
+              PC
+            </div>
+            <div class="box">
+              <span>👤 Calificación</span>
+              PEGI 16
+            </div>
+          </div>
+        </div>
+
+        <div class="precio">
+          <div>
+            <span class="prrice">39.99€</span>
+            <br>
+            <small>Impuestos incluidos</small>
+          </div>
+          <button class="add-button">🛒 Añadir al Carrito</button>
         </div>
       </div>
-
-      <div class="game-card">
-        <div class="rating">⭐ 4.6</div>
-        <a href="../catalogo/leyendoffantasy.html"><img src="../../img/Legendofantasy.png"></a>
-        <div class="game-info">
-          <div class="title">Legend of Fantasy XV</div>
-          <div class="tags">RPG Aventura</div>
-          <div class="price">59.99€</div>
-          <div>PS5 / Xbox Series X</div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="discount">-10%</div>
-        <div class="rating">⭐ 4.5</div>
-        <a href="../catalogo/speedracing.html"><img src="../../img/speedracing.png" alt=""></a>
-        <div class="game-info">
-          <div class="title">Speed Racing Ultimate</div>
-          <div class="tags">Carreras Deportes</div>
-          <div><span class="price">44.99€</span><span class="old-price">49.99€</span></div>
-          <div>PC / PS5</div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="rating">⭐ 4.3</div>
-        <a href="../catalogo/football.html"><img src="../../img/footballmasters.png" alt=""></a>
-        <div class="game-info">
-          <div class="title">Football Masters 2025</div>
-          <div class="tags">Deportes Simulación</div>
-          <div class="price">54.99€</div>
-          <div>PC / PS5</div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="nuevo">NUEVO</div>
-        <div class="rating">⭐ 4.7</div>
-        <a href="../catalogo/stellar.html"><img src="../../img/stellarconquest.png" alt=""></a>
-        <div class="game-info">
-          <div class="title">Stellar Conquest</div>
-          <div class="tags">Estrategia Ciencia Ficción</div>
-          <div class="price">39.99€</div>
-          <div>PC</div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="discount">-25%</div>
-        <div class="rating">⭐ 4.4</div>
-        <a href="../catalogo/mystic.html"><img src="../../img/mysticdungeons.png" alt=""></a>
-        <div class="game-info">
-          <div class="title">Mystic Dungeons</div>
-          <div class="tags">Roguelike Indie</div>
-          <div><span class="price">22.49€</span><span class="old-price">29.99€</span></div>
-          <div>PC / PS5</div>
-        </div>
-      </div>
-    </main>
+    </div>
   </div>
 
   <footer class="footer" style="background-color: rgb(103, 9, 150);">
@@ -182,6 +130,18 @@
         </ul>
       </div>
 
+      <!-- Columna 3 -->
+      <div class="footer-column">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="../catalogo/catalogo.html">Acción</a></li>
+          <li><a href="../catalogo/catalogo.html">Aventura</a></li>
+          <li><a href="../catalogo/catalogo.html">Deportes</a></li>
+          <li><a href="../catalogo/catalogo.html">RPG</a></li>
+          <li><a href="../catalogo/catalogo.html">Estrategia</a></li>
+        </ul>
+      </div>
+
       <!-- Columna 4 -->
       <div class="footer-column">
         <h3> Contacto </h3>
@@ -196,6 +156,6 @@
     </div>
   </footer>
 
-<!-- Bootstrap Icons --> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Bootstrap Icons del menu --> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>

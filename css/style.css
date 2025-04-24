@@ -119,6 +119,84 @@ body { /*Estilo general del sitio*/
       background-color: #FF2E63;
   }
 
+  .social-icons i { /* Iconos de redes sociales */
+    margin-left: 30px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white; }
+
+/* CSS de Juegos destacados */
+
+#Juegos_Destacados h1 {
+  color: white;
+  margin-left: 27%;
+  margin-bottom: 5%;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 .25rem .5rem #21212126;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.slider a {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider a img {
+  width: 100%;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: .75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* efecto neon */
+.slider-wrapper {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow:
+    0 0 5px #08f,
+    0 0 10px #08f,
+    0 0 20px #08f,
+    0 0 30px #0af;
+}
+
+.slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Ensures the images also have a rounded edge to match the wrapper */
+}
+
   /* para las paginas */
 
   .container {
@@ -524,7 +602,183 @@ body { /*Estilo general del sitio*/
     margin: 10px 0;
   }
 
+  /*las paginas de catalogo*/
+
+  .first {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .backlink {
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+
+  .another {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gameimage {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .gameimage img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .discountt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff2e80;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  .gameinfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .titlerating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 40px;
+    color: #fbbf24;
+  }
+
+  .rating span {
+    margin-left: 5px;
+  }
+
+  .tags {
+    color: #00f2ff;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .infoo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    font-family: monospace;
+  }
+
+  .box span {
+    color: #00f2ff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .precio {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .prrice {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d6d;
+  }
+
+  .otro {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  small {
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .add-button {
+    background-color: #001f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-button:hover {
+    background-color: #003d5c;
+  }
+
 @media (max-width: 768px) {
+
+  /*Portada*/
+
+  #Portada h1 {
+    font-size: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #Portada p {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 25%;
+    padding: 15px;
+  }
+
+  #Portada button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .Margen-boton {
+    margin-left: 5%;
+  }
 
   /* menu */
     .navbar-nav {
@@ -573,5 +827,26 @@ body { /*Estilo general del sitio*/
   justify-content: center;
 }
 
+/*las paginas de catalogo*/
+
+.another {
+  flex-direction: column;
+}
+
+.precio {
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.titlerating {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tags {
+  flex-wrap: wrap;
+}
 
 }
