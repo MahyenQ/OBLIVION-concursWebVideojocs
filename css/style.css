@@ -92,6 +92,28 @@ body { /*Estilo general del sitio*/
       box-shadow: 0 0 10px white; /* Brillo alrededor del cuadro */
   }
 
+  .Margen {
+    text-shadow: 
+      0 0 5px rgb(181, 92, 233), 
+      0 0 10px rgb(181, 92, 233), 
+      0 0 20px rgb(181, 92, 233), 
+      0 0 30px rgb(181, 92, 233), 
+      0 0 40px rgb(181, 92, 233), 
+      0 0 50px rgb(181, 92, 233), 
+      0 0 60px rgb(181, 92, 233);
+  }
+
+  #Portada sec {
+    text-shadow: 
+    0 0 5px rgb(222, 151, 242), 
+    0 0 10px rgb(222, 151, 242), 
+    0 0 20px rgb(222, 151, 242), 
+    0 0 30px rgb(222, 151, 242), 
+    0 0 40px rgb(222, 151, 242), 
+    0 0 50px rgb(222, 151, 242), 
+    0 0 60px rgb(222, 151, 242);
+  }
+
   .Margen-boton { /* Espacio entre el texto y el botón */
       margin-left: 10%;
   }
@@ -136,9 +158,17 @@ body { /*Estilo general del sitio*/
 }
 
 #Juegos_Destacados h1 {
-  color: white;
+  color: black;
   margin-left: 27%;
   margin-bottom: 5%;
+  text-shadow: 
+      0 0 5px rgb(82, 244, 187), 
+      0 0 10px rgb(82, 244, 187), 
+      0 0 20px rgb(82, 244, 187), 
+      0 0 30px rgb(82, 244, 187), 
+      0 0 40px rgb(82, 244, 187), 
+      0 0 50px rgb(82, 244, 187), 
+      0 0 60px rgb(82, 244, 187);
   
 }
 
@@ -187,7 +217,8 @@ body { /*Estilo general del sitio*/
 }
 
 /* efecto neon */
-.slider-wrapper {
+
+.slider-wrapper { 
   position: relative;
   padding: 20px;
   border-radius: 10px;
@@ -525,6 +556,14 @@ body { /*Estilo general del sitio*/
     text-align: center;
     margin-top: 60px; /* Espacio entre el menú y el título */
     margin-bottom: 5px; /* Reduce el espacio debajo del título */
+    text-shadow: 
+      0 0 5px rgb(92, 92, 233), 
+      0 0 10px rgb(92, 92, 233), 
+      0 0 20px rgb(92, 92, 233), 
+      0 0 30px rgb(92, 92, 233), 
+      0 0 40px rgb(92, 92, 233), 
+      0 0 50px rgb(92, 92, 233), 
+      0 0 60px rgb(92, 92, 233);
   }
 
   .sidebar { /* barra lateral */
@@ -644,6 +683,20 @@ body { /*Estilo general del sitio*/
     font-size: 10px;
     border: none;
     margin: 10px 0;
+  }
+
+  /* la pagina de oferta */
+
+  .ofertas {
+    font-size: 40px;
+    text-shadow: 
+    0 0 5px rgb(92, 92, 233), 
+    0 0 10px rgb(92, 92, 233), 
+    0 0 20px rgb(92, 92, 233), 
+    0 0 30px rgb(92, 92, 233), 
+    0 0 40px rgb(92, 92, 233), 
+    0 0 50px rgb(92, 92, 233), 
+    0 0 60px rgb(92, 92, 233);
   }
 
   /*las paginas de catalogo*/
@@ -798,6 +851,101 @@ body { /*Estilo general del sitio*/
     background-color: #003d5c;
   }
 
+
+  /* Categorias de Juegos - Botones */
+
+  .categories-section {
+    background-image: url(../img/explorar.png); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 0; /* Espaciado superior e inferior */
+  }
+
+  .category-card {
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 242, 0, 0.8); /* Brillo azul flojo */
+  }
+
+  .category-card:hover {
+    background-color: #5A189A;
+    box-shadow: 0 4px 12px rgba(255, 242, 0, 0.8); /* Aumenta el brillo al pasar el mouse */
+    transform: translateY(-5px);
+  }
+
+.categories-section {
+  padding: 40px 20px;
+}
+
+.categories-title {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 39px;
+  text-align: center;
+  text-shadow: 
+      0 0 5px rgb(82, 244, 187), 
+      0 0 10px rgb(82, 244, 187), 
+      0 0 20px rgb(82, 244, 187), 
+      0 0 30px rgb(82, 244, 187), 
+      0 0 40px rgb(82, 244, 187), 
+      0 0 50px rgb(82, 244, 187), 
+      0 0 60px rgb(82, 244, 187);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  .categories-grid {
+      grid-template-columns: repeat(6, 1fr);
+  }
+
+.category-card {
+  background-color: rgba(45, 45, 45, 0.8);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  background-color: #5A189A;
+  box-shadow: 0 4px 12px rgba(0, 245, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.category-icon { /* Icono de la categoria */
+  color: #00F5FF;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.category-card:hover .category-icon { 
+  color: #FF2E63;
+}
+
+.category-name { /* Nombre de la categoria */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover .category-name { 
+  color: #00F5FF;
+}
+
 @media (max-width: 768px) {
 
   /*Portada*/
@@ -873,6 +1021,12 @@ body { /*Estilo general del sitio*/
 
 /*las paginas de catalogo*/
 
+.title { /* Titulo de la pagina */
+  font-size: 30px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
 .another { 
   flex-direction: column;
 }
@@ -893,4 +1047,40 @@ body { /*Estilo general del sitio*/
   flex-wrap: wrap;
 }
 
+}
+
+/* Categorias de Juegos - Botones */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Slider */
+
+  .slider-wrapper {
+    max-width: 80%;
+  }
+
+  #Juegos_Destacados h1 {
+    margin-left: 7.5%;
+  }
+}
+
+@media (max-width: 599px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+  }
+
+  .category-card {
+    padding: 20px;
+  }
+
+  .category-icon {
+    font-size: 24px;
+  }
+
+  .category-name {
+    font-size: 14px;
+  }
 }
