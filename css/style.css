@@ -242,6 +242,41 @@ body { /*Estilo general del sitio*/
     color: orange;
   }
 
+  .requirements-box {
+      background-color: #fdbf45; /* Fondo amarillo */
+      color: white;
+      font-family: monospace; /* Fuente Verdana */
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.5; /* Espaciado entre líneas */
+      position: relative;
+      z-index: 1;
+      display: inline-block; /* Ajusta el tamaño del cuadro al contenido */
+      border: 2px solid white; /* Bordes blancos */
+      padding: 20px; /* Espaciado interno */
+      background-color: rgba(68, 64, 64, 0.5); /* Fondo semitransparente */
+      border-radius: 8px;
+      box-shadow: 0 0 10px white;
+    }
+
+  .requirements-box h3 { /* Titulo de los requisitos */
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff79e9; /* Cambia el color del título a amarillo */
+    text-align: center;
+  }
+
+  .requirements-box strong { /* Texto en negrita */
+    color: rgb(238, 187, 99); /* Cambia el color del texto en negrita a amarillo */
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .requirements-box li {
+    font-family: monospace;
+  }
+
+
   .price-box:hover {
     box-shadow: 0 0 15px 3px #659de7;
     background-color: #96bbf0;
